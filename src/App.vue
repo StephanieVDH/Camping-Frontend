@@ -1,18 +1,46 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app"> 
+
+    <ul id="navigation"> Dit is mijn navigatiebar
+      <li v-for="(page, index) in pages" :key="index" @click="changePage(page)" style="cursor: pointer;">
+        {{ page }}
+      </li>
+    </ul>
+ 
+    <div> 
+      <HomePage v-if="activePage == 'home'"/>
+      <Test1 v-if="activePage == 'test1'" v-on:cp="changePage" /> 
+    </div>
+
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+/* eslint-disable */
+import HomePage from './components/HomePage.vue';
+import Test1 from './components/Test1.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HomePage,
+    Test1
+  },
+
+  data() {
+      return {
+        activePage: 'test1',
+        pages: ['home','test1']
+      }
+    },
+    methods: {
+      changePage(page) {
+        console.log("Changing page to: " + page);
+        this.activePage = page;
+      }
+    }
 }
 </script>
 
@@ -25,4 +53,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
