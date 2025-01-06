@@ -40,12 +40,12 @@
           </p>
           <div class="features">
             <div class="feature">
-              <div class="feature-image"></div>
+              <img src="../assets/HomepagePics/pic1.jpg" alt="View of a scenic forest and canyon at sunset from the back of a camper van, with two people in sleeping bags and a dog resting beside them." class="pic_small" />
               <h3>Simple Steps to Book Your Adventure</h3>
               <p>Once you’ve found a spot you love, booking is just a click away.</p>
             </div>
             <div class="feature">
-              <div class="feature-image"></div>
+              <img src="../assets/HomepagePics/pic2.jpg" alt="Cozy campsite in a forest featuring a blue and white tent, two camping chairs, and a fire pit surrounded by tall trees with sunlight filtering through the canopy." class="pic_small" />
               <h3>Customize Your Search for the Best Experience</h3>
               <p>
                 Filter by price, amenities, and location type to tailor your
@@ -53,17 +53,13 @@
               </p>
             </div>
             <div class="feature">
-              <div class="feature-image"></div>
+              <img src="../assets/HomepagePics/pic3.jpg" alt="Group camping scene with multiple tents set up in a grassy area surrounded by trees." class="pic_small" />
               <h3>Read Reviews to Make Informed Choices</h3>
               <p>
                 Check out user reviews to ensure your spot meets your
                 expectations.
               </p>
             </div>
-          </div>
-          <div class="explore-buttons">
-            <button class="btn">Learn More</button>
-            <button class="btn">Sign Up</button>
           </div>
         </div>
       </section>
@@ -171,4 +167,12 @@
     text-decoration: none;
     color: #333;
   }
+
+  /*/ Pics */
+  .pic_small {
+  width: 100%; /* Ensure images fit their container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  object-fit: cover; /* Ensure images are cropped properly */
+}
   </style>

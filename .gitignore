@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+assets
+/HomepagePics
+
 
 # local env files
 .env.local
