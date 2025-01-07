@@ -22,11 +22,9 @@
             Whether you seek a serene forest escape or a beachside retreat, we
             have the perfect location waiting for you.
           </p>
-          <div class="hero-buttons">
-            <button class="btn">Search</button>
-            <button class="btn">Explore</button>
-          </div>
-          <div class="hero-image"></div>
+          <img src="../assets/HomepagePics/pic4.jpg" alt="BLABLA" class="hero-image" />
+          <br> <br>
+          <button class="btn">Explore</button>
         </div>
       </section>
   
@@ -133,7 +131,7 @@
   }
   .hero-image {
     background: #ddd;
-    height: 300px;
+    height: 450px;
     margin-top: 20px;
   }
   

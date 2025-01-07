@@ -13,8 +13,6 @@
       <Test1 v-if="activePage == 'test1'" v-on:cp="changePage" /> 
     </div>
 
-
-
   </div>
 </template>
 

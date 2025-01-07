@@ -4,7 +4,13 @@
       <div class="camping-grid">
         <div v-for="spot in paginatedCampingspots" :key="spot.id" class="camping-card">
           <img :src="spot.image" :alt="spot.Name" class="camping-image" />
-          <h2 class="camping-name">{{ spot.Name }}</h2>
+
+          <h2 class="camping-name">
+          <router-link :to="{ name: 'CampingDetails', params: { id: spot.id } }">
+          {{ spot.Name }}
+          </router-link>
+          </h2>
+
           <p class="camping-price">€{{ spot.price }} per night</p>
         </div>
       </div>
